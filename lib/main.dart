@@ -1,7 +1,9 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:movies_app/screens/login/login.dart';
 import 'package:movies_app/screens/onboarding/onboarding.dart';
+import 'package:movies_app/screens/register/register.dart';
 import 'package:movies_app/screens/splash/splash.dart';
 import 'package:movies_app/utils/ui/app_theme.dart';
 
@@ -22,9 +24,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
-home: OnBoarding(),
+home: Register(),
     );
   }
 }

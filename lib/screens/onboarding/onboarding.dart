@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/utils/ui/app_colors.dart';
-import 'package:movies_app/utils/ui/app_images.dart';
-import 'package:movies_app/widget/custom_button.dart';
+
 
 import 'onboarding_page.dart';
 
 class OnBoarding extends StatefulWidget {
 
- const  OnBoarding({super.key});
+ const OnBoarding({super.key});
 
   @override
   State<OnBoarding> createState() => _OnBoardingState();
@@ -43,7 +42,7 @@ class _OnBoardingState extends State<OnBoarding> {
                         duration: const Duration(milliseconds: 300),
                         curve: Curves.easeInOut,
                       );
-                    };
+                    }
                   },
                     style:ElevatedButton.styleFrom(backgroundColor: AppColors.yellow,
                         shape: RoundedRectangleBorder(
